@@ -1,0 +1,60 @@
+/*Review section styling*/
+
+.starating {
+  border-bottom: 0.1em solid black;
+  padding-bottom: 0.3em;
+}
+
+/*Awards section styling*/
+
+img {
+  width: 20vw;
+  height: 20vw;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+svg {
+  transition: transform 0.2s;
+}
+
+svg:hover {
+  transform: scale(1.5);
+}
+
+.card {
+  overflow: hidden;
+  transition: transform 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 59px 38px,
+    rgba(0, 0, 0, 0.22) 0px 55px 12px;
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 50vw;
+    height: 50vw;
+  }
+  svg {
+    transition: none;
+  }
+  svg:hover {
+    transform: none;
+  }
+
+  .card {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;;
+  }
+}

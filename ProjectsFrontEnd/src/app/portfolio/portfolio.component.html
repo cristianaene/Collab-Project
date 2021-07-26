@@ -1,0 +1,140 @@
+<div class="container">
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close btn-lg" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+         <img id="imgB" src="{{bigPicture}}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- modal end -->
+    <h2 class="text-center p-5">Portfolio</h2>
+
+    <h3 id="children" class="text-center m-3"><u>Children Photography</u></h3>
+    <div class="row justify-content-around">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-lg-5 mb-0 d-flex justify-content-center"
+            *ngFor="let picturesCh of picturesCh">
+            <img (click)="openModal($event)" data-bs-toggle="modal" data-bs-target="#exampleModal" src="{{picturesCh.imgSmallCh}}" attr.data="{{picturesCh.imgBigCh}}" class="card-img-top img-fluid imgS" alt="destination">
+        </div>
+        <h4 class="text-center pt-5">Description</h4>
+        <p class="text-center">I'm baby health goth next level shoreditch hot chicken wayfarers. Poutine green juice
+            hexagon succulents hell
+            of. VHS
+            chicharrones artisan, meditation art party heirloom direct trade vinyl sartorial lumbersexual try-hard
+            readymade
+            lyft.
+            Cliche master cleanse YOLO franzen lyft bicycle rights stumptown poke.I'm baby hammock kinfolk tofu
+            flexitarian sustainable messenger bag brooklyn polaroid. Stumptown direct trade
+            williamsburg farm-to-table, etsy wayfarers lo-fi. Biodiesel fingerstache brunch, readymade shaman selvage
+            lo-fi
+            pinterest vegan keytar kogi ethical pitchfork deep v hoodie. Williamsburg next level mustache fanny pack
+            skateboard
+            sriracha, godard shabby chic tousled kombucha live-edge man braid echo park iceland humblebrag. Slow-carb
+            chicharrones
+            literally, stumptown activated charcoal chillwave chambray.</p>
+    </div>
+
+    <!--Link Price button to Contact Page-->
+    <div class="addbtn text-center p-3"> <strong>Book for: </strong>
+        <button (click)="goToContact();" type = "button" class="btn btn-outline-secondary btn-lg ms-2">800.99 &euro;</button>
+    </div>
+    <br>
+
+    <h3 id="group" class="text-center m-3"><u>Group Photography</u></h3>
+    <div class="row justify-content-around">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-lg-5 mb-0 d-flex justify-content-center"
+            *ngFor="let picturesG of picturesG">
+            <img (click)="openModal($event)" src="{{picturesG.imgSmallG}}" attr.data="{{picturesG.imgBigG}}" data-bs-toggle="modal" data-bs-target="#exampleModal" class="card-img-top img-fluid imgS" alt="destination">
+        </div>
+        <h4 class="text-center pt-5">Description</h4>
+        <p class="text-center">Leggings you probably haven't heard of them hoodie, tilde quinoa etsy freegan street art
+            whatever poutine.
+            Cronut
+            chia
+            90's kickstarter woke. Chillwave keffiyeh hashtag schlitz fixie irony. Kombucha fashion axe la croix
+            crucifix edison
+            bulb. Shaman wolf mustache, shoreditch hoodie slow-carb heirloom. Pabst mumblecore DIY paleo direct trade
+            slow-carb
+            yr
+            YOLO listicle.Readymade lomo snackwave, letterpress distillery dreamcatcher chicharrones. Organic DIY
+            crucifix unicorn locavore vinyl
+            kickstarter, cardigan food truck hella chia. Tattooed sartorial aesthetic, flannel lomo salvia street art
+            letterpress
+            lo-fi keffiyeh tofu disrupt cronut. Normcore celiac irony, activated charcoal retro stumptown copper mug
+            hexagon
+            gochujang.</p>
+    </div>
+
+    <!--Link Price button to Contact Page-->
+    <div class="addbtn text-center p-3"> <strong>Book for: </strong>
+        <button (click)="goToContact();" type = "button" class="btn btn-outline-secondary btn-lg ms-2">1100.99 &euro;</button>
+    </div>
+    <br>
+
+    <h3 id="portrait" class="text-center m-3"><u>Portrait Photography</u></h3>
+    <div class="row justify-content-around">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-lg-5 mb-0 d-flex justify-content-center"
+            *ngFor="let picturesP of picturesP">
+            <img (click)="openModal($event)" src="{{picturesP.imgSmallP}}" attr.data="{{picturesP.imgBigP}}" data-bs-toggle="modal" data-bs-target="#exampleModal" class="card-img-top img-fluid imgS" alt="destination">
+        </div>
+        <h4 class="text-center pt-5">Description</h4>
+        <p class="text-center">Church-key pour-over roof party bicycle rights humblebrag synth. Kinfolk mustache
+            vexillologist photo booth
+            lumbersexual
+            celiac cred swag small batch waistcoat seitan church-key. Waistcoat authentic irony tattooed. Schlitz celiac
+            biodiesel
+            fam man bun 90's VHS synth lomo. Yuccie migas street art banh mi cliche craft beer pork belly fashion axe
+            glossier
+            bitters hammock fixie la croix.Seitan edison bulb disrupt sartorial kale chips, craft beer locavore. Hell of
+            mlkshk man braid, pour-over live-edge air
+            plant semiotics austin try-hard YOLO neutra selfies kickstarter. Copper mug kinfolk cold-pressed you
+            probably haven't
+            heard of them cronut mumblecore, cloud bread put a bird on it stumptown tbh neutra. Kinfolk crucifix fam
+            farm-to-table
+            DIY, iPhone pabst beard celiac four dollar toast narwhal cray hexagon wayfarers fashion axe. Swag street art
+            food truck
+            chillwave fixie tacos. Flexitarian waistcoat put a bird on it, church-key palo santo small batch biodiesel
+            pabst celiac
+            kogi tattooed vinyl kombucha thundercats.</p>
+    </div>
+
+    <!--Link Price button to Contact Page-->
+    <div class="addbtn text-center p-3"> <strong>Book for: </strong>
+        <button (click)="goToContact();" type = "button" class="btn btn-outline-secondary btn-lg ms-2">1800.99 &euro;</button>
+    </div>
+    <br>
+
+    <h3 id="wedding" class="text-center m-3"><u>Wedding Photography</u></h3>
+    <div class="row justify-content-around">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 g-5 mb-lg-5 mb-0 d-flex justify-content-center"
+            *ngFor="let picturesW of picturesW">
+            <img (click)="openModal($event)" src="{{picturesW.imgSmallW}}" attr.data="{{picturesW.imgBigW}}" data-bs-toggle="modal" data-bs-target="#exampleModal" class="card-img-top img-fluid imgS" alt="destination">
+        </div>
+        <h4 class="text-center pt-5">Description</h4>
+        <p class="text-center">Art party cloud bread banh mi whatever tilde palo santo. Seitan viral fingerstache
+            activated charcoal cray
+            banjo DIY
+            trust fund bitters celiac skateboard la croix sartorial 8-bit. Artisan kitsch roof party health goth before
+            they
+            sold out kinfolk snackwave mixtape godard put a bird on it. Tumblr edison bulb YOLO activated charcoal
+            organic. Edison
+            bulb live-edge stumptown, venmo gastropub kombucha tbh snackwave cray.Artisan pickled sustainable chambray
+            flexitarian vaporware, hoodie bushwick. Tumeric readymade vinyl portland neutra
+            asymmetrical hot chicken succulents 90's. Enamel pin selvage vape kinfolk. Sustainable edison bulb disrupt
+            gentrify.
+            Palo santo biodiesel church-key kogi cliche flexitarian tote bag, meggings viral.</p>
+    </div>
+
+    <!--Link Price button to Contact Page-->
+    <div class="addbtn text-center p-3"> <strong>Book for: </strong>
+        <button (click)="goToContact();" type = "button" class="btn btn-outline-secondary btn-lg ms-2">2500.00 &euro;</button>
+    </div>
+    <br>
+</div>
